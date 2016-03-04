@@ -5,16 +5,34 @@
 
 /* scrollbars */
 
+.scroll-pane {
+    -fx-background-insets: 0;
+    -fx-padding: 0;
+}
+
+.scroll-bar {
+    -fx-background-insets: 0;
+}
+
 .track {
-    -fx-background-color: #ffffff;
+    -fx-background-color: white;
     -fx-border-width: 0;
+    -fx-border-color: white;
     -fx-padding: 10px;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+}
+
+.track-background {
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
 }
 
 .thumb {
     -fx-background-color: rgb(195,195,195);
     -fx-border-radius: 28px;
     -fx-background-radius: 28px;
+    -fx-background-insets: 2;
 }
 
 .decrement-button, .decrement-arrow {
@@ -22,6 +40,7 @@
     -fx-background-color: #ffffff;
     -fx-border-width: 0;
     -fx-padding: 0;
+    -fx-background-insets: 0;
 }
 
 .increment-button, .increment-arrow {
@@ -29,6 +48,7 @@
     -fx-background-color: #ffffff;
     -fx-border-width: 0;
     -fx-padding: 0;
+    -fx-background-insets: 0;
 }
 
 /* basic layout */

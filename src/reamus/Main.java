@@ -34,6 +34,14 @@ public class Main extends Application {
 
         Scene scene = new Scene(createLayout());
         scene.getStylesheets().add("styles/default.css");
+
+        String os = System.getProperty("os.name", "unknown").toLowerCase();
+        if (os.matches(".*windows.*")) {
+            scene.getStylesheets().add("styles/windows.css");
+        } else if (os.matches(".*Mac.*")) {
+            scene.getStylesheets().add("styles/osx.css");
+        }
+
         primaryStage.setScene(scene);
 
         center(primaryStage);
@@ -42,6 +50,7 @@ public class Main extends Application {
 
     Pane createLayout() {
         BorderPane root = new BorderPane();
+        root.getStyleClass().add("root-pane");
 
         root.setLeft(createSidebars());
         root.setCenter(createContent());
