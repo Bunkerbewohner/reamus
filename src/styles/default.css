@@ -1,0 +1,65 @@
+
+* {
+    -fx-focus-color: transparent;
+}
+
+/* scrollbars */
+
+.track {
+    -fx-background-color: #ffffff;
+    -fx-border-width: 0;
+    -fx-padding: 10px;
+}
+
+.thumb {
+    -fx-background-color: rgb(195,195,195);
+    -fx-border-radius: 28px;
+    -fx-background-radius: 28px;
+}
+
+.decrement-button, .decrement-arrow {
+    visibility: hidden;
+    -fx-background-color: #ffffff;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+.increment-button, .increment-arrow {
+    visibility: hidden;
+    -fx-background-color: #ffffff;
+    -fx-border-width: 0;
+    -fx-padding: 0;
+}
+
+/* basic layout */
+
+.folders-sidebar-frame {
+    -fx-padding: 0;
+    -fx-border-width: 0 1px 0 0;
+    -fx-border-color: rgb(195,195,195);
+    -fx-font-size: 14px; /* scrollbar width */
+}
+
+.folders-sidebar {
+    -fx-background-color: rgb(245,245,245);
+}
+
+.docs-sidebar-frame {
+    -fx-padding: 0;
+    -fx-border-width: 0 1px 0 0;
+    -fx-border-color: rgb(195,195,195);
+    -fx-font-size: 14px; /* scrollbar width */
+}
+
+.docs-sidebar {
+    -fx-background-color: #ffffff;
+    -fx-min-height: 1000px;
+}
+
+.content-frame {
+    -fx-padding: 0;
+}
+
+.content {
+    -fx-background-color: #ffffff;
+}
